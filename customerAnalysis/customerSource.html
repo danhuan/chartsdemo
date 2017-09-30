@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>顾客来源</title>
+    <link rel="stylesheet" href="../css/show.css">
+
+</head>
+
+<body>
+
+<div class="customerSource">
+
+    <div class="main">
+        <div class="timeSelect">
+            <div class="aoiName"><i class="icon"></i><span title="某博物馆" class="text">某博物馆</span></div>
+            <div class="right">
+                <span class="ant-calendar-picker">
+                    <span class="ant-calendar-picker-input ant-input" disabled="">
+                        <input disabled="" readonly="" value="" placeholder="开始日期"
+                               class="ant-calendar-range-picker-input">
+                        <span class="ant-calendar-range-picker-separator"> ~ </span>
+                        <input disabled="" readonly="" value="" placeholder="结束日期"
+                               class="ant-calendar-range-picker-input">
+                        <span class="ant-calendar-picker-icon"></span>
+                    </span>
+                </span>
+                <ul class="tabs"><!-- react-text: 7273 --> <!-- /react-text -->
+                    <li class="leftRadius  disabled">昨天</li>
+                    <li class="  disabled">本周</li>
+                    <li class="  disabled">本月</li>
+                    <li class="  disabled">本季度</li>
+                    <li class="rightRadius  disabled">本年</li><!-- react-text: 7279 --> <!-- /react-text -->
+                </ul>
+            </div>
+        </div>
+        <div class="featureSelect">
+            <div class="optionList"><span class="optionName">性别</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group">
+                    <label class="ant-checkbox-group-item ant-checkbox-wrapper">
+                        <span class="ant-checkbox">
+                            <input type="checkbox" class="ant-checkbox-input" value="on">
+                            <span class="ant-checkbox-inner"></span>
+                        </span>
+                        <span>男</span>
+                    </label><label class="ant-checkbox-group-item ant-checkbox-wrapper">
+                        <span class="ant-checkbox">
+                            <input type="checkbox" class="ant-checkbox-input" value="on">
+                            <span class="ant-checkbox-inner"></span>
+                        </span>
+                    <span>女</span>
+                </label>
+                </div>
+            </div>
+            <div class="optionList"><span class="optionName">年龄</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>0-18</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>19-24</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>25-34</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>35-44</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>45-54</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>≥55</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">职业</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>家庭主妇</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>公司职员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>科研人员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>服务人员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>学生</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>公务员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>教职工</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">教育水平</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>本科</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>专科</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>博士</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>硕士</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">经济水平</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>有房</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>有车</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">资产等级</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>富豪</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>富人</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>中产</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>工薪一族</span></label></div>
+            </div>
+            <button value="查询">查询</button>
+        </div>
+        <div class="source-map">
+            <div class="map-head"><h2 class="itemTitle"><i class="icon"></i><span class="title">客群来源</span></h2>
+                <div class="right">
+                    <div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-no-animation">
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav ant-tabs-nav-animated">
+                                            <div class="ant-tabs-ink-bar ant-tabs-ink-bar-no-animated" style="display: block; transform: translate3d(0px, 0px, 0px); width: 132px;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true" class="ant-tabs-tab-active ant-tabs-tab" data-path="demodata/liveaddress.json">
+                                                <span class="tab-title"><i class="iconfont icon-home"></i>来源居住地</span>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false" class=" ant-tabs-tab" data-path="demodata/workaddress.json">
+                                                <span class="tab-title"><i class="iconfont icon-work"></i>来源工作地</span>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false" class=" ant-tabs-tab" data-path="demodata/remenshangquan.json">
+                                                <span class="tab-title"><i class="iconfont icon-shopping"></i>来源热门商圈</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-tabs-content ant-tabs-content-no-animated">
+                            <div role="tabpanel" aria-hidden="false"
+                                 class="ant-tabs-tabpane ant-tabs-tabpane-active"></div>
+                            <div role="tabpanel" aria-hidden="true"
+                                 class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                            <div role="tabpanel" aria-hidden="true"
+                                 class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-body">
+                <div class="aoi-top">
+                    <div class="spread"><span class="iconfont icon-right-angle"></span></div>
+                    <div class="aoi-top-box">
+                        <div class="aoi-top-title"><i class="iconfont icon-hot"></i><sapn>来源居住地榜单</sapn></div>
+                        <ul id="aoiTopList" class="aoi-top-list"></ul>
+                    </div>
+                </div>
+                <div class="amap-container" id="amapContainer" style="height: 500px;width: auto;padding: 0 20px"></div>
+                <div class="aoi-legend"><span>客流量</span>
+                    <span class="aoi-legend-color" style="background-color: rgb(255, 109, 154);"></span>
+                    <span class="aoi-legend-color" style="background-color: rgb(255, 221, 119);"></span>
+                    <span class="aoi-legend-color" style="background-color: rgb(100, 237, 178);"></span>
+                    <span class="aoi-legend-color" style="background-color: rgb(85, 172, 254);"></span>
+                    <span class="aoi-legend-color" style="background-color: rgb(0, 126, 255);"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery/jquery-1.11.1.min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=93ed6e9d29bb6c2764c7796600980dbf"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/customerAnalysis/customerSource.js"></script>
+</body>
+
+</html>

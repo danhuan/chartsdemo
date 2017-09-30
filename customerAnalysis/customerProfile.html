@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>客群分析>顾客画像</title>
+    <link rel="stylesheet" href="../css/show.css">
+</head>
+
+<body style="padding: 10px;">
+
+
+<div class="profileBox">
+    <div class="main">
+        <div class="timeSelect">
+            <div class="aoiName"><i class="icon"></i><span title="某博物馆" class="text">某博物馆</span></div>
+            <div class="right"><span class="ant-calendar-picker"><span class="ant-calendar-picker-input ant-input" disabled="">
+                <input disabled="" readonly="" value="" placeholder="开始日期" class="ant-calendar-range-picker-input">
+                <span class="ant-calendar-range-picker-separator"> ~ </span>
+                <input disabled="" readonly="" value="" placeholder="结束日期" class="ant-calendar-range-picker-input">
+                <span class="ant-calendar-picker-icon"></span></span></span>
+                <ul class="tabs">
+                    <li class="leftRadius  disabled">昨天</li>
+                    <li class="  disabled">本周</li>
+                    <li class="  disabled">本月</li>
+                    <li class="  disabled">本季度</li>
+                    <li class="rightRadius  disabled">本年</li></ul>
+            </div>
+        </div>
+        <div class="sex">
+            <h2 class="itemTitle"><i class="icon"></i><span class="title">性别分布</span>
+                <div class="tab">消费群体男性居多</div>
+            </h2>
+            <div class="sexBox">
+                <div class="sexList">
+                    <div class="manList">
+                        <span class="num">74%</span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="deep iconfont icon-man"></span>
+                        <span class="light iconfont icon-man"></span>
+                        <span class="normal iconfont icon-man"></span>
+                        <span class="normal iconfont icon-man"></span>
+                    </div>
+                    <div class="womanList">
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="normal iconfont icon-woman"></span>
+                        <span class="light iconfont icon-woman"></span>
+                        <span class="deep iconfont icon-woman"></span>
+                        <span class="deep iconfont icon-woman"></span>
+                        <span class="num">26%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ageBox">
+            <h2 class="itemTitle"><i class="icon"></i><span class="title">年龄分布</span>
+                <div class="tab">25 - 34 岁是你生意的主力军</div>
+            </h2>
+            <div id="ageBarChart" class="chart" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"></div>
+        </div>
+        <div class="revenue">
+            <h2 class="itemTitle"><i class="icon"></i><span class="title">收入范围</span>
+                <div class="tab">中产人群最爱消费</div>
+            </h2>
+            <div class="revenueBox">
+                <div class="revenueList">
+                    <div class="list"><span class="name">中产</span>
+                        <div class="barBox">
+                            <div class="bar" style="background: rgb(249, 126, 178); width: 67.86px;"></div>
+                            <span class="num" style="color: rgb(249, 126, 178);">263,004</span></div>
+                    </div>
+                    <div class="list"><span class="name">富人</span>
+                        <div class="barBox">
+                            <div class="bar" style="background: rgb(136, 181, 255); width: 16.86px;"></div>
+                            <span class="num" style="color: rgb(136, 181, 255);">65,372</span></div>
+                    </div>
+                    <div class="list"><span class="name">工薪一族</span>
+                        <div class="barBox">
+                            <div class="bar" style="background: rgb(253, 169, 149); width: 15.2px;"></div>
+                            <span class="num" style="color: rgb(253, 169, 149);">58,839</span></div>
+                    </div>
+                    <div class="list"><span class="name">富豪</span>
+                        <div class="barBox">
+                            <div class="bar" style="background: rgb(138, 138, 203); width: 0.08px;"></div>
+                            <span class="num" style="color: rgb(138, 138, 203);">348</span></div>
+                    </div>
+                </div>
+                <div id="revenueChart" class="revenueChart" style="-webkit-tap-highlight-color: transparent; user-select: none; background: transparent;"></div>
+            </div>
+        </div>
+        <div class="profession">
+            <h2 class="itemTitle"><i class="icon"></i><span class="title">职业分布</span>
+                <div class="tab">公司职员人群最爱消费</div>
+            </h2>
+            <div class="professionBox">
+                <div class="professionList">
+                    <div class="list"><span class="circle" style="background: rgb(253, 169, 149);"></span><span
+                            class="text" style="border: 1px dashed rgb(253, 169, 149);">公司职员</span><span class="num"
+                                                                                                         style="color: rgb(253, 169, 149);">383,420</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(101, 218, 235);"></span><span
+                            class="text" style="border: 1px dashed rgb(101, 218, 235);">服务人员</span><span class="num"
+                                                                                                         style="color: rgb(101, 218, 235);">58,719</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(106, 163, 255);"></span><span
+                            class="text" style="border: 1px dashed rgb(106, 163, 255);">公务员</span><span class="num"
+                                                                                                        style="color: rgb(106, 163, 255);">44,488</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(166, 200, 255);"></span><span
+                            class="text" style="border: 1px dashed rgb(166, 200, 255);">学生</span><span class="num"
+                                                                                                       style="color: rgb(166, 200, 255);">28,608</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(209, 234, 174);"></span><span
+                            class="text" style="border: 1px dashed rgb(209, 234, 174);">科研人员</span><span class="num"
+                                                                                                         style="color: rgb(209, 234, 174);">19,643</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(138, 138, 203);"></span><span
+                            class="text" style="border: 1px dashed rgb(138, 138, 203);">教职工</span><span class="num"
+                                                                                                        style="color: rgb(138, 138, 203);">16,953</span>
+                    </div>
+                    <div class="list"><span class="circle" style="background: rgb(249, 126, 178);"></span><span
+                            class="text" style="border: 1px dashed rgb(249, 126, 178);">家庭主妇</span><span class="num"
+                                                                                                         style="color: rgb(249, 126, 178);">5,647</span>
+                    </div>
+                </div>
+                <div id="professionChart" class="professionChart" style="-webkit-tap-highlight-color: transparent; user-select: none; background: transparent;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/jquery-1.11.1.min.js"></script>
+<script src="../js/echarts/echarts-all-3.js"></script>
+<script src="../js/echarts/echarts-init.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/customerAnalysis/customerProfile.js"></script>
+
+</body>
+
+</html>

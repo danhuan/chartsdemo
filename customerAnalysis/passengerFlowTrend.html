@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>客流趋势</title>
+    <link rel="stylesheet" href="../plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/show.css">
+</head>
+
+<body class="al-content">
+
+<div class="content-body aroundInfoBox">
+    <!--<div class="head">
+        <div class="yesterday">
+            <span class="num">12,239</span>
+            <span class="text">昨日客流指数</span>
+        </div>
+        <div class="beforeYesterday">
+            <span class="num">10,222</span>
+            <span class="text">前日客流指数</span>
+        </div>
+        <div class="change">
+            <span class="num">
+                <i class="iconfont icon-asc"></i>16.48%
+            </span>
+            <span class="text">较上一日变化</span>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>昨日客流指数</h5>
+                </div>
+                <div class="ibox-content oh">
+                    <i class="fa fa-3x fr fa-fw fa-style1"><img class="icon" src="../img/yesterday.png"></i>
+                    <span class="f30 pull-left ml10 fa-style1" id="yesterday">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>前日客流指数</h5>
+                </div>
+                <div class="ibox-content oh">
+                    <i class="fa fa-3x fr fa-fw fa-style2"><img class="icon" src="../img/beforeYesterday.png"></i>
+                    <span class="f30 pull-left ml10 fa-style2" id="beforeYesterday">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>较上一日变化</h5>
+                </div>
+                <div class="ibox-content oh">
+                    <i class="glyphicon glyphicon-arrow-up  fa-style3"></i>
+                    <span class="f30 pull-left ml10" id="wifiSummary">16.48%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="timeSelect">
+            <div class="aoiName"><i class="icon"></i><span title="某博物馆" class="text">某博物馆</span></div>
+            <div class="right">
+                <span class="ant-calendar-picker">
+                    <span class="ant-calendar-picker-input ant-input" disabled="">
+                        <input disabled="" readonly="" value="" placeholder="开始日期"
+                               class="ant-calendar-range-picker-input">
+                        <span class="ant-calendar-range-picker-separator"> ~ </span>
+                        <input disabled="" readonly="" value="" placeholder="结束日期"
+                               class="ant-calendar-range-picker-input">
+                        <span class="ant-calendar-picker-icon"></span>
+                    </span>
+                </span>
+                <ul class="tabs"><!-- react-text: 7273 --> <!-- /react-text -->
+                    <li class="leftRadius  disabled">昨天</li>
+                    <li class="  disabled">本周</li>
+                    <li class="  disabled">本月</li>
+                    <li class="  disabled">本季度</li>
+                    <li class="rightRadius  disabled">本年</li><!-- react-text: 7279 --> <!-- /react-text -->
+                </ul>
+            </div>
+        </div>
+        <div class="featureSelect">
+            <div class="optionList"><span class="optionName">性别</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group">
+                    <label class="ant-checkbox-group-item ant-checkbox-wrapper">
+                        <span class="ant-checkbox">
+                            <input type="checkbox" class="ant-checkbox-input" value="on">
+                            <span class="ant-checkbox-inner"></span>
+                        </span>
+                        <span>男</span>
+                    </label><label class="ant-checkbox-group-item ant-checkbox-wrapper">
+                        <span class="ant-checkbox">
+                            <input type="checkbox" class="ant-checkbox-input" value="on">
+                            <span class="ant-checkbox-inner"></span>
+                        </span>
+                        <span>女</span>
+                    </label>
+                </div>
+            </div>
+            <div class="optionList"><span class="optionName">年龄</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>0-18</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>19-24</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>25-34</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>35-44</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>45-54</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>≥55</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">职业</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>家庭主妇</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>公司职员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>科研人员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>服务人员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>学生</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>公务员</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>教职工</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">教育水平</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>本科</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>专科</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>博士</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>硕士</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">经济水平</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>有房</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>有车</span></label></div>
+            </div>
+            <div class="optionList"><span class="optionName">资产等级</span><span class="all active">不限</span>
+                <div class="ant-checkbox-group"><label class="ant-checkbox-group-item ant-checkbox-wrapper"><span
+                        class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>富豪</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>富人</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>中产</span></label><label
+                        class="ant-checkbox-group-item ant-checkbox-wrapper"><span class="ant-checkbox"><input
+                        type="checkbox" class="ant-checkbox-input" value="on"><span
+                        class="ant-checkbox-inner"></span></span><span>工薪一族</span></label></div>
+            </div>
+            <button value="查询">查询</button>
+        </div>
+        <div class="custom-flow-box">
+            <h2 class="itemTitle"><i class="icon"></i><span class="title">客流指数趋势</span></h2>
+            <div id="flowCharts" style="height: 500px;width: auto;padding: 0 20px"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery/jquery-1.11.1.min.js"></script>
+<script src="../js/echarts/echarts-all-3.js"></script>
+<script src="../js/echarts/echarts-init.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/customerAnalysis/passengerFlowTrend.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>到访分析</title>
+    <link rel="stylesheet" href="../css/show.css">
+
+</head>
+
+<body>
+<div class="visitBox">
+    <div class="main">
+        <div class="timeSelect">
+            <div class="aoiName"><i class="icon"></i><span title="某博物馆" class="text">某博物馆</span></div>
+            <div class="right">
+                <div class="ant-select ant-select-disabled" style="width: 98px; margin-left: 50px;">
+                    <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                         aria-expanded="false" tabindex="0">
+                        <div class="ant-select-selection__rendered">
+                            <div class="ant-select-selection-selected-value" title="星期"
+                                 style="display: block; opacity: 1;">星期</div>
+                        </div>
+                        <span class="ant-select-arrow" unselectable="unselectable"
+                              style="user-select: none;"><b></b></span></div>
+                </div>
+                <div class="aa" style="display: inline-block;"><span class="ant-calendar-picker"><span><input
+                        disabled="" readonly="" value="2017.03.01" placeholder="请选择日期"
+                        class="ant-calendar-picker-input ant-input"><span
+                        class="ant-calendar-picker-icon"></span></span></span></div>
+            </div>
+        </div>
+        <div class="newOld"><h2 class="itemTitle"><i class="icon"></i><span class="title">新老顾客</span></h2>
+            <div class="newOldBox">
+                <div class="left" id="newChart"></div>
+                <div class="right" id="oldChart"></div>
+            </div>
+        </div>
+        <div class="arrived-box"><h2 class="itemTitle"><i class="icon"></i><span class="title">平均到访次数</span></h2>
+            <div class="chart" id="visitBarChart"
+                 style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"></div>
+        </div>
+    </div>
+
+
+</div>
+<script src="../js/jquery/jquery-1.11.1.min.js"></script>
+<script src="../js/echarts/echarts-all-3.js"></script>
+<script src="../js/echarts/echarts-init.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/customerAnalysis/visitAnalysis.js"></script>
+
+</body>
+
+</html>
